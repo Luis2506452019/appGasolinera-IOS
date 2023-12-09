@@ -26,6 +26,8 @@ final class AuthenticationViewModel: ObservableObject {
             switch result {
             case.success (let user):
                 self?.user = user
+                // Restablecer el mensaje de error en caso de éxito
+                self?.messageError = nil
             case .failure(let error):
                 self?.messageError = error.localizedDescription
             }
@@ -35,13 +37,16 @@ final class AuthenticationViewModel: ObservableObject {
     func login(email: String, password: String) {
         authenticationRepository.login(email: email, password: password) { [weak self] result in
             switch result {
-            case.success (let user):
+            case .success(let user):
                 self?.user = user
+                // Restablecer el mensaje de error en caso de éxito
+                self?.messageError = nil
             case .failure(let error):
                 self?.messageError = error.localizedDescription
             }
         }
     }
+
     
     func logout() {
         do {
