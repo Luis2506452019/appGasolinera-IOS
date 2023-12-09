@@ -21,7 +21,7 @@ struct OfertaView: View {
                             Text("Gasolineras UNO")
                                 .foregroundColor(.white)
                                 .font(.system(size:15))
-                                .padding()
+                                
 
                             Image("uno")
                                 .resizable()
@@ -41,9 +41,10 @@ struct OfertaView: View {
                                     .font(.system(size:13))
                                     .padding(8)
                                     .background(Color.green)
+                                    
                             }
                         }
-                    }
+                    }.padding()
                     Text("Más ofertas en:")
                         .foregroundColor(.white)
                         .font(.system(size:18))

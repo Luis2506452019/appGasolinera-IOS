@@ -130,6 +130,7 @@ struct UbicacionView: View {
                             }
                         }
                     }
+                    Spacer()
                 }
             }
         }
