@@ -22,7 +22,7 @@ struct MainView: View {
                 case 1:
                     UbicacionView()
                 case 2:
-                    HomeView()
+                    HomeView(authenticationViewModel: AuthenticationViewModel())
                 case 3:
                     OfertaView()
                 default:
@@ -51,7 +51,6 @@ struct MainView: View {
             }
             .background(ColorHelper.color("#333333"))
             .toolbar {
-                
                 ToolbarItem(placement: .navigationBarLeading) {
                     // Lado izquierdo del toolbar
                 }
@@ -61,8 +60,8 @@ struct MainView: View {
                         authenticationViewModel.logout()
                     }
                 }
-                
             }
+
             
         }
     }

@@ -7,11 +7,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    
     var body: some View {
         ZStack {
             ColorHelper.color("#333333").ignoresSafeArea()
             VStack {
-                Text("Contenido de Home")
+                Text("Bienvenido \(authenticationViewModel.user?.email ?? "No User")")
                     .font(.title)
                     .padding()
             }
@@ -23,6 +25,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(authenticationViewModel: AuthenticationViewModel())
     }
 }

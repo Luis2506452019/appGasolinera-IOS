@@ -23,8 +23,8 @@ struct appGasolineraApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if let user = authenticationViewModel.user {
-                MainView(authenticationViewModel: AuthenticationViewModel())
+            if let _ = authenticationViewModel.user {
+                MainView(authenticationViewModel: authenticationViewModel)
             } else {
                 ContentView(authenticationViewModel: authenticationViewModel)
             }

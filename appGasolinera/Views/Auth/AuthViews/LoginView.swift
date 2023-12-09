@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    
     @State private var username: String = ""
     @State private var password: String = ""
     // Variable para controlar la visibilidad de la contraseña
@@ -77,7 +79,7 @@ struct LoginView: View {
             }
 
             Button(action: {
-             
+                authenticationViewModel.login(email: username, password: password)
             }) {
                 Text("INGRESAR")
                     .font(.body)
@@ -88,6 +90,13 @@ struct LoginView: View {
                     .cornerRadius(8)
             }
             .padding(.top, 20)
+            if let messageError = authenticationViewModel.messageError{
+                Text(messageError)
+                    .bold()
+                    .font(.body)
+                    .foregroundColor(.red)
+                    .padding(.top, 20)
+            }
             
             Spacer()
         }
@@ -99,6 +108,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(authenticationViewModel: AuthenticationViewModel())
     }
 }

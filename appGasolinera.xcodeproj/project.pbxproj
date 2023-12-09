@@ -127,7 +127,6 @@
 		0C3FC2ED2AEA264E0018F643 /* appGasolinera */ = {
 			isa = PBXGroup;
 			children = (
-				0C4FE3162B23EB750064AE86 /* Firebase */,
 				0C5A62712AFD7B5D00F479A9 /* Components */,
 				0C5DE9782AF8743C003E5246 /* Views */,
 				0C3FC2EE2AEA264E0018F643 /* appGasolineraApp.swift */,
@@ -166,14 +165,23 @@
 			path = appGasolineraUITests;
 			sourceTree = "<group>";
 		};
-		0C4FE3162B23EB750064AE86 /* Firebase */ = {
+		0C44E0ED2B24208000D1EA75 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				0C4FE3172B23EB890064AE86 /* AuthenticationFirebaseDatasource.swift */,
 				0C4FE31F2B23EC3F0064AE86 /* AuthenticationRepository.swift */,
 				0C4FE3242B23ECCA0064AE86 /* AuthenticationViewModel.swift */,
 			);
-			path = Firebase;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0C44E0EE2B24208E00D1EA75 /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				0C6DBE692AFF54DB00DAE06E /* LoginView.swift */,
+				0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */,
+			);
+			path = AuthViews;
 			sourceTree = "<group>";
 		};
 		0C5A62712AFD7B5D00F479A9 /* Components */ = {
@@ -209,8 +217,8 @@
 		0C6DBE652AFF54AE00DAE06E /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				0C6DBE692AFF54DB00DAE06E /* LoginView.swift */,
-				0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */,
+				0C44E0EE2B24208E00D1EA75 /* AuthViews */,
+				0C44E0ED2B24208000D1EA75 /* Repository */,
 			);
 			path = Auth;
 			sourceTree = "<group>";

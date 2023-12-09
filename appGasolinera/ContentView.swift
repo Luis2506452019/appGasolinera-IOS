@@ -65,7 +65,7 @@ struct ContentView: View {
             case .register:
                 RegistrationView(authenticationViewModel: authenticationViewModel)
             case .login:
-                LoginView()
+                LoginView(authenticationViewModel: authenticationViewModel)
             }
         }
         
