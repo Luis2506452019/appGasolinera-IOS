@@ -15,14 +15,18 @@ struct OfertaView: View {
                 ColorHelper.color("#333333").ignoresSafeArea()
                 
                 VStack {
-                    Text("Gasolineras UNO")
-                        .foregroundColor(.white)
-                        .font(.title3)
-                        .padding()
+                    
                     HStack {
-                        Image("uno")
-                            .resizable()
-                            .frame(width: 123, height: 132)
+                        VStack{
+                            Text("Gasolineras UNO")
+                                .foregroundColor(.white)
+                                .font(.system(size:15))
+                                .padding()
+
+                            Image("uno")
+                                .resizable()
+                                .frame(width: 123, height: 132)
+                        }
                         VStack {
                             Text("Obten el 20%\nen tu siguiente recarga")
                                 .foregroundColor(.white)
@@ -34,15 +38,15 @@ struct OfertaView: View {
                                 Text("REGISTRA TU CUPON")
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
-                                    .font(.system(size:15))
+                                    .font(.system(size:13))
                                     .padding(8)
                                     .background(Color.green)
                             }
                         }
                     }
-                    Text("Mas ofertas en:")
+                    Text("Más ofertas en:")
                         .foregroundColor(.white)
-                        .font(.title3)
+                        .font(.system(size:18))
                         .padding()
                     
                     Rectangle()

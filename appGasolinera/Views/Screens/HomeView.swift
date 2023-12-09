@@ -8,8 +8,9 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
-    
+
     var body: some View {
+        
         ZStack {
             ColorHelper.color("#333333").ignoresSafeArea()
             VStack {
@@ -18,6 +19,7 @@ struct HomeView: View {
                     .padding()
             }
         }
+        
     }
 }
 
