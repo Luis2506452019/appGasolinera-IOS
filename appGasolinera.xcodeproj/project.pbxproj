@@ -170,7 +170,6 @@
 			children = (
 				0C4FE3172B23EB890064AE86 /* AuthenticationFirebaseDatasource.swift */,
 				0C4FE31F2B23EC3F0064AE86 /* AuthenticationRepository.swift */,
-				0C4FE3242B23ECCA0064AE86 /* AuthenticationViewModel.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -218,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0C44E0EE2B24208E00D1EA75 /* AuthViews */,
+				0C4FE3242B23ECCA0064AE86 /* AuthenticationViewModel.swift */,
 				0C44E0ED2B24208000D1EA75 /* Repository */,
 			);
 			path = Auth;

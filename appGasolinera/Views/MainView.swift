@@ -22,11 +22,11 @@ struct MainView: View {
                 case 1:
                     UbicacionView()
                 case 2:
-                    HomeView(authenticationViewModel: AuthenticationViewModel())
+                    HomeView(authenticationViewModel: authenticationViewModel)
                 case 3:
                     OfertaView()
                 default:
-                    MainView(authenticationViewModel: AuthenticationViewModel())
+                    MainView(authenticationViewModel: authenticationViewModel)
                 }
 
                 HStack {
