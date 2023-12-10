@@ -15,7 +15,7 @@ struct EstacionView: View {
     var body: some View {
         
         NavigationView{
-            
+
             List {
                 ForEach(gasolineraViewModel.gasolineras) { gasolinera in
                     
@@ -59,12 +59,20 @@ struct EstacionView: View {
             }
             .navigationBarHidden(true)
             .navigationBarTitle("", displayMode: .inline)
+            .overlay(
+                NavigationLink(destination: ManageView()) {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.system(size: 50))
+                        .foregroundColor(ColorHelper.color("#333333"))
+                        .padding()
+                    }
+                .padding(.leading, 16)
+                .padding(.bottom, 16), alignment: .bottomTrailing)
         }
         
         
     }
 }
-
 
 struct EstacionView_Previews: PreviewProvider {
     static var previews: some View {

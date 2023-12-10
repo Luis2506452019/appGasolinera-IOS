@@ -15,7 +15,7 @@ struct GasolineraDetailView: View {
             ZStack {
                 ColorHelper.color("#333333").ignoresSafeArea()
 
-                VStack(spacing: 20) {
+                VStack(alignment: .center, spacing: 20) {
                     Text("Gasolinera: " + gasolinera.nomb_gasolinera + ", " + gasolinera.nomb_sucursal)
                         .font(.title2)
                         .fontWeight(.semibold)
@@ -50,7 +50,7 @@ struct GasolineraDetailView: View {
                                 .fontWeight(.semibold)
                         }
                         
-                        HStack(spacing: 40) {
+                        HStack(alignment: .center, spacing: 40) {
                             Text("Diesel")
                                 .font(.subheadline)
                                 .foregroundColor(.black)
@@ -60,7 +60,7 @@ struct GasolineraDetailView: View {
                                 .foregroundColor(.black)
                         }
                         
-                        HStack(spacing: 40) {
+                        HStack(alignment: .center, spacing: 40) {
                             Text("Regular")
                                 .font(.subheadline)
                                 .foregroundColor(.black)
@@ -70,7 +70,7 @@ struct GasolineraDetailView: View {
                                 .foregroundColor(.black)
                         }
                         
-                        HStack(spacing: 40) {
+                        HStack(alignment: .center, spacing: 40) {
                             Text("Especial:")
                                 .font(.subheadline)
                                 .foregroundColor(.black)

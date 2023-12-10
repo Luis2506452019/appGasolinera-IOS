@@ -18,6 +18,7 @@
 		0C45872F2B254CE10048B8AB /* GasolineraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45872E2B254CE10048B8AB /* GasolineraViewModel.swift */; };
 		0C45873C2B254D680048B8AB /* GasolineraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45873B2B254D680048B8AB /* GasolineraRepository.swift */; };
 		0C4587442B254D810048B8AB /* GasolineraDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4587432B254D810048B8AB /* GasolineraDatasource.swift */; };
+		0C45A3BF2B25A690009EDCD2 /* ManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45A3BE2B25A690009EDCD2 /* ManageView.swift */; };
 		0C4FE2D52B23C7200064AE86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C4FE2D42B23C7200064AE86 /* GoogleService-Info.plist */; };
 		0C4FE2DE2B23CB350064AE86 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DD2B23CB350064AE86 /* FirebaseAnalytics */; };
 		0C4FE2E02B23CB350064AE86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DF2B23CB350064AE86 /* FirebaseAuth */; };
@@ -70,6 +71,7 @@
 		0C45872E2B254CE10048B8AB /* GasolineraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraViewModel.swift; sourceTree = "<group>"; };
 		0C45873B2B254D680048B8AB /* GasolineraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraRepository.swift; sourceTree = "<group>"; };
 		0C4587432B254D810048B8AB /* GasolineraDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraDatasource.swift; sourceTree = "<group>"; };
+		0C45A3BE2B25A690009EDCD2 /* ManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageView.swift; sourceTree = "<group>"; };
 		0C4FE2D42B23C7200064AE86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C4FE2FC2B23E3E20064AE86 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		0C4FE3172B23EB890064AE86 /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */,
 				0C5767F22AF8B19B00BF70DB /* EstacionView.swift */,
+				0C45A3BE2B25A690009EDCD2 /* ManageView.swift */,
 			);
 			path = StationViews;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				0C5767FD2AF8B1C300BF70DB /* OfertaView.swift in Sources */,
 				0C4FE2FD2B23E3E20064AE86 /* DismissView.swift in Sources */,
 				0C4FE3182B23EB890064AE86 /* AuthenticationFirebaseDatasource.swift in Sources */,
+				0C45A3BF2B25A690009EDCD2 /* ManageView.swift in Sources */,
 				0C6DBE6F2AFF54FD00DAE06E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
