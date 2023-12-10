@@ -13,6 +13,8 @@
 		0C3FC2F62AEA26500018F643 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3FC2F52AEA26500018F643 /* Preview Assets.xcassets */; };
 		0C3FC3012AEA26500018F643 /* appGasolineraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3FC3002AEA26500018F643 /* appGasolineraTests.swift */; };
 		0C3FC30C2AEA26510018F643 /* appGasolineraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3FC30B2AEA26510018F643 /* appGasolineraUITests.swift */; };
+		0C4587242B2548870048B8AB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4587232B2548870048B8AB /* FirebaseFirestoreSwift */; };
+		0C4587262B2548970048B8AB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4587252B2548970048B8AB /* FirebaseFirestore */; };
 		0C4FE2D52B23C7200064AE86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C4FE2D42B23C7200064AE86 /* GoogleService-Info.plist */; };
 		0C4FE2DE2B23CB350064AE86 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DD2B23CB350064AE86 /* FirebaseAnalytics */; };
 		0C4FE2E02B23CB350064AE86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DF2B23CB350064AE86 /* FirebaseAuth */; };
@@ -29,6 +31,8 @@
 		0C6B698C2B01CB0D0095C61A /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6B698B2B01CB0D0095C61A /* ColorHelper.swift */; };
 		0C6DBE6A2AFF54DB00DAE06E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DBE692AFF54DB00DAE06E /* LoginView.swift */; };
 		0C6DBE6F2AFF54FD00DAE06E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */; };
+		0CBB5FBD2B250AC400DC19BE /* Gasolinera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */; };
+		0CBB5FD32B2512AD00DC19BE /* GasolineraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,8 @@
 		0C6B698B2B01CB0D0095C61A /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		0C6DBE692AFF54DB00DAE06E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasolinera.swift; sourceTree = "<group>"; };
+		0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4587242B2548870048B8AB /* FirebaseFirestoreSwift in Frameworks */,
 				0C4FE2E22B23CB350064AE86 /* FirebaseAnalyticsSwift in Frameworks */,
 				0C4FE2DE2B23CB350064AE86 /* FirebaseAnalytics in Frameworks */,
+				0C4587262B2548970048B8AB /* FirebaseFirestore in Frameworks */,
 				0C4FE2E02B23CB350064AE86 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +119,7 @@
 				0C3FC2FF2AEA26500018F643 /* appGasolineraTests */,
 				0C3FC30A2AEA26510018F643 /* appGasolineraUITests */,
 				0C3FC2EC2AEA264E0018F643 /* Products */,
+				0C4587202B2548870048B8AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +192,20 @@
 			path = AuthViews;
 			sourceTree = "<group>";
 		};
+		0C4587202B2548870048B8AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C4587272B2548DF0048B8AB /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
 		0C5A62712AFD7B5D00F479A9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,10 +228,12 @@
 		0C6DBE642AFF549900DAE06E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0C5DE9732AF87436003E5246 /* HomeView.swift */,
+				0C4587272B2548DF0048B8AB /* Stations */,
+				0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */,
 				0C5767F22AF8B19B00BF70DB /* EstacionView.swift */,
-				0C5767F72AF8B1B100BF70DB /* UbicacionView.swift */,
-				0C5767FC2AF8B1C300BF70DB /* OfertaView.swift */,
+				0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */,
+				0CBB5FB52B24F5B200DC19BE /* Management */,
+				0CBB5FCB2B25121700DC19BE /* Others */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -221,6 +246,23 @@
 				0C44E0ED2B24208000D1EA75 /* Repository */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		0CBB5FB52B24F5B200DC19BE /* Management */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		0CBB5FCB2B25121700DC19BE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0C5DE9732AF87436003E5246 /* HomeView.swift */,
+				0C5767F72AF8B1B100BF70DB /* UbicacionView.swift */,
+				0C5767FC2AF8B1C300BF70DB /* OfertaView.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +285,8 @@
 				0C4FE2DD2B23CB350064AE86 /* FirebaseAnalytics */,
 				0C4FE2DF2B23CB350064AE86 /* FirebaseAuth */,
 				0C4FE2E12B23CB350064AE86 /* FirebaseAnalyticsSwift */,
+				0C4587232B2548870048B8AB /* FirebaseFirestoreSwift */,
+				0C4587252B2548970048B8AB /* FirebaseFirestore */,
 			);
 			productName = appGasolinera;
 			productReference = 0C3FC2EB2AEA264E0018F643 /* appGasolinera.app */;
@@ -369,6 +413,8 @@
 				0C6DBE6A2AFF54DB00DAE06E /* LoginView.swift in Sources */,
 				0C3FC2EF2AEA264E0018F643 /* appGasolineraApp.swift in Sources */,
 				0C5767F82AF8B1B100BF70DB /* UbicacionView.swift in Sources */,
+				0CBB5FD32B2512AD00DC19BE /* GasolineraDetailView.swift in Sources */,
+				0CBB5FBD2B250AC400DC19BE /* Gasolinera.swift in Sources */,
 				0C5767F32AF8B19B00BF70DB /* EstacionView.swift in Sources */,
 				0C6B698C2B01CB0D0095C61A /* ColorHelper.swift in Sources */,
 				0C5767FD2AF8B1C300BF70DB /* OfertaView.swift in Sources */,
@@ -701,6 +747,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0C4587232B2548870048B8AB /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C4FE2DC2B23CB350064AE86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		0C4587252B2548970048B8AB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C4FE2DC2B23CB350064AE86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		0C4FE2DD2B23CB350064AE86 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0C4FE2DC2B23CB350064AE86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

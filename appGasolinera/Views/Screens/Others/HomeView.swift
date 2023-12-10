@@ -36,7 +36,7 @@ struct HomeView: View {
                         .frame(width: 138, height: 158)
                         .padding()
                     
-                    VStack {
+                    /*VStack {
                         Text("\" El único modo de hacer un gran trabajo es amar lo que haces. \"")
                             .bold()
                             .multilineTextAlignment(.center)
@@ -51,7 +51,7 @@ struct HomeView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color.white)
-                    )
+                    )*/
                 }.padding()
                 
             }
