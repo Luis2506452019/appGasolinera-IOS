@@ -15,6 +15,9 @@
 		0C3FC30C2AEA26510018F643 /* appGasolineraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3FC30B2AEA26510018F643 /* appGasolineraUITests.swift */; };
 		0C4587242B2548870048B8AB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4587232B2548870048B8AB /* FirebaseFirestoreSwift */; };
 		0C4587262B2548970048B8AB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4587252B2548970048B8AB /* FirebaseFirestore */; };
+		0C45872F2B254CE10048B8AB /* GasolineraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45872E2B254CE10048B8AB /* GasolineraViewModel.swift */; };
+		0C45873C2B254D680048B8AB /* GasolineraRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C45873B2B254D680048B8AB /* GasolineraRepository.swift */; };
+		0C4587442B254D810048B8AB /* GasolineraDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4587432B254D810048B8AB /* GasolineraDatasource.swift */; };
 		0C4FE2D52B23C7200064AE86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C4FE2D42B23C7200064AE86 /* GoogleService-Info.plist */; };
 		0C4FE2DE2B23CB350064AE86 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DD2B23CB350064AE86 /* FirebaseAnalytics */; };
 		0C4FE2E02B23CB350064AE86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4FE2DF2B23CB350064AE86 /* FirebaseAuth */; };
@@ -31,7 +34,6 @@
 		0C6B698C2B01CB0D0095C61A /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6B698B2B01CB0D0095C61A /* ColorHelper.swift */; };
 		0C6DBE6A2AFF54DB00DAE06E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DBE692AFF54DB00DAE06E /* LoginView.swift */; };
 		0C6DBE6F2AFF54FD00DAE06E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */; };
-		0CBB5FBD2B250AC400DC19BE /* Gasolinera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */; };
 		0CBB5FD32B2512AD00DC19BE /* GasolineraDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,9 @@
 		0C3FC3072AEA26510018F643 /* appGasolineraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appGasolineraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3FC30B2AEA26510018F643 /* appGasolineraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appGasolineraUITests.swift; sourceTree = "<group>"; };
 		0C3FC30D2AEA26510018F643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C45872E2B254CE10048B8AB /* GasolineraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraViewModel.swift; sourceTree = "<group>"; };
+		0C45873B2B254D680048B8AB /* GasolineraRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraRepository.swift; sourceTree = "<group>"; };
+		0C4587432B254D810048B8AB /* GasolineraDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraDatasource.swift; sourceTree = "<group>"; };
 		0C4FE2D42B23C7200064AE86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C4FE2FC2B23E3E20064AE86 /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
 		0C4FE3172B23EB890064AE86 /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
@@ -78,7 +83,6 @@
 		0C6B698B2B01CB0D0095C61A /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		0C6DBE692AFF54DB00DAE06E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0C6DBE6E2AFF54FD00DAE06E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasolinera.swift; sourceTree = "<group>"; };
 		0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasolineraDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,11 +203,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0C4587272B2548DF0048B8AB /* Stations */ = {
+		0C4587272B2548DF0048B8AB /* Station */ = {
 			isa = PBXGroup;
 			children = (
+				0C45873A2B254CF60048B8AB /* StationViews */,
+				0C45872E2B254CE10048B8AB /* GasolineraViewModel.swift */,
+				0C4587362B254CE80048B8AB /* Repository */,
 			);
-			path = Stations;
+			path = Station;
+			sourceTree = "<group>";
+		};
+		0C4587362B254CE80048B8AB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0C45873B2B254D680048B8AB /* GasolineraRepository.swift */,
+				0C4587432B254D810048B8AB /* GasolineraDatasource.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0C45873A2B254CF60048B8AB /* StationViews */ = {
+			isa = PBXGroup;
+			children = (
+				0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */,
+				0C5767F22AF8B19B00BF70DB /* EstacionView.swift */,
+			);
+			path = StationViews;
 			sourceTree = "<group>";
 		};
 		0C5A62712AFD7B5D00F479A9 /* Components */ = {
@@ -220,6 +245,7 @@
 			children = (
 				0C50A1F42B19410600861E04 /* MainView.swift */,
 				0C6DBE652AFF54AE00DAE06E /* Auth */,
+				0C4587272B2548DF0048B8AB /* Station */,
 				0C6DBE642AFF549900DAE06E /* Screens */,
 			);
 			path = Views;
@@ -228,12 +254,9 @@
 		0C6DBE642AFF549900DAE06E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0C4587272B2548DF0048B8AB /* Stations */,
-				0CBB5FBC2B250AC300DC19BE /* Gasolinera.swift */,
-				0C5767F22AF8B19B00BF70DB /* EstacionView.swift */,
-				0CBB5FD22B2512AD00DC19BE /* GasolineraDetailView.swift */,
-				0CBB5FB52B24F5B200DC19BE /* Management */,
-				0CBB5FCB2B25121700DC19BE /* Others */,
+				0C5DE9732AF87436003E5246 /* HomeView.swift */,
+				0C5767F72AF8B1B100BF70DB /* UbicacionView.swift */,
+				0C5767FC2AF8B1C300BF70DB /* OfertaView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -246,23 +269,6 @@
 				0C44E0ED2B24208000D1EA75 /* Repository */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		0CBB5FB52B24F5B200DC19BE /* Management */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Management;
-			sourceTree = "<group>";
-		};
-		0CBB5FCB2B25121700DC19BE /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				0C5DE9732AF87436003E5246 /* HomeView.swift */,
-				0C5767F72AF8B1B100BF70DB /* UbicacionView.swift */,
-				0C5767FC2AF8B1C300BF70DB /* OfertaView.swift */,
-			);
-			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,16 +411,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C45872F2B254CE10048B8AB /* GasolineraViewModel.swift in Sources */,
 				0C5DE9742AF87436003E5246 /* HomeView.swift in Sources */,
 				0C50A1F52B19410600861E04 /* MainView.swift in Sources */,
 				0C4FE3202B23EC3F0064AE86 /* AuthenticationRepository.swift in Sources */,
 				0C3FC2F12AEA264E0018F643 /* ContentView.swift in Sources */,
 				0C4FE3252B23ECCA0064AE86 /* AuthenticationViewModel.swift in Sources */,
 				0C6DBE6A2AFF54DB00DAE06E /* LoginView.swift in Sources */,
+				0C4587442B254D810048B8AB /* GasolineraDatasource.swift in Sources */,
 				0C3FC2EF2AEA264E0018F643 /* appGasolineraApp.swift in Sources */,
+				0C45873C2B254D680048B8AB /* GasolineraRepository.swift in Sources */,
 				0C5767F82AF8B1B100BF70DB /* UbicacionView.swift in Sources */,
 				0CBB5FD32B2512AD00DC19BE /* GasolineraDetailView.swift in Sources */,
-				0CBB5FBD2B250AC400DC19BE /* Gasolinera.swift in Sources */,
 				0C5767F32AF8B19B00BF70DB /* EstacionView.swift in Sources */,
 				0C6B698C2B01CB0D0095C61A /* ColorHelper.swift in Sources */,
 				0C5767FD2AF8B1C300BF70DB /* OfertaView.swift in Sources */,

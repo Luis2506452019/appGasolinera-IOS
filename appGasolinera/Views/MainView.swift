@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    @StateObject var gasolineraViewModel: GasolineraViewModel = GasolineraViewModel()
+    
     @State private var indexSeleccionado = 2
     let iconos = ["gauge", "map", "house", "gift"]
 
@@ -19,7 +21,7 @@ struct MainView: View {
                 // Contenido de navegación
                 switch indexSeleccionado {
                 case 0:
-                    EstacionView()
+                    EstacionView(gasolineraViewModel: gasolineraViewModel)
                 case 1:
                     UbicacionView()
                 case 2:
